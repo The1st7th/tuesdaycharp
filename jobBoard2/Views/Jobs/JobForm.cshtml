@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Job Board</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <style>
+  body {background-color: #E2DBBE;
+        text-align: center;
+        margin: 5%;}
+  h1 {color:#011936;}
+  </style>
+  <body>
+    <h1>Fill in your Job Opening details</h1>
+    <form action='/jobs' method = "post">
+      <div class="container">
+        <label for='title'>Title</label>
+        <input id='title' name='title' class='form-control' type='text'>
+        <label for='description'>Description</label>
+        <input id='description' name='description' class='form-control' type='text'>
+      </div>
+      <button type='submit' class='btn'>Submit</button>
+    </form>
+  </body>
+</html>

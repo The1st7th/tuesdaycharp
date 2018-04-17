@@ -1,0 +1,12 @@
+<h1>Cars</h1>
+<ul>
+  @foreach(var car in Model)
+  {
+    <li>@car.GetModel()</li>
+    <li>@car.GetPrice()</li>
+  }
+</ul>
+<p><a href="/cars/new">Add another car</a></p>
+<form action="/cars/delete" method="post">
+  <button type="submit" name="button">Clear All Items</button>
+</form>
